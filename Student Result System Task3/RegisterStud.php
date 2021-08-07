@@ -3,10 +3,18 @@
     if(isset($_POST['insert']))
     {
         //Getting data from client
-        $rn =$_POST['rollno'];	
-        $nm=$_POST['name'];
-        $eng = $_POST['english'];
-        $phy=$_POST['physics'];
+        $rn =$_POST['rno'];	
+        $nm =$_POST['s_name'];
+        $eng =$_POST['english'];
+        $phy =$_POST['physics'];
+        $chm =$_POST['chemistry'];
+        $bio =$_POST['biology'];
+        $maths=$_POST['maths'];
+        $his =$_POST['history'];
+        $eco =$_POST['economics'];
+        $geo =$_POST['geography'];
+        $mar =$_POST['marathi'];
+        $hin =$_POST['hindi']; 
         
         //Creating database connection
         $conn=new mysqli($servername,$username,$password,$dbname);
@@ -16,8 +24,7 @@
             {
                
             //Insert Query
-		
-            $qry="INSERT INTO studentresult (,Name, English,Physics) VALUES ($rn,'$nm' ,'$eng', '$phy', )";
+		$qry="INSERT INTO studentresult (rno, s_name, english, physics, chemistry, biology, maths, history, economics, geography, marathi, hindi) VALUES ($rn,'$nm' ,'$eng', '$phy','$chm','$bio','$maths','$his','$eco','$geo','$mar','$hin')";
                 //File moving to directory
                 if($conn->query($qry)===true)
                 {

@@ -44,9 +44,7 @@ if(isset($_POST["query"]))
 }
 else
 {
- $query = "
-  SELECT * FROM studentresult ORDER BY rollno
- ";
+ $query = "SELECT * FROM studentresult ORDER BY rno ";
 }
 $result = mysqli_query($conn, $query);
 if(mysqli_num_rows($result) > 0)
@@ -57,7 +55,7 @@ echo "<div class='tableDesign'>";
            echo "<div style='overflow-x:auto;'>";
 $output = '
  
-<th>Roll No</th>
+    <th>Roll No</th>
      <th>Name</th>
      <th>English</th>
      <th>Physics</th>			     
@@ -86,8 +84,8 @@ $output = '
 
   <?php
       
-      echo "<td>"; echo $row1['rollno']; echo "</td>";
-      echo "<td>"; echo $row1['name']; echo "</td>";
+      echo "<td>"; echo $row1['rno']; echo "</td>";
+      echo "<td>"; echo $row1['s_name']; echo "</td>";
       echo "<td>"; echo $row1['english']; echo "</td>";
       echo "<td>"; echo $row1['physics']; echo "</td>";
     echo "<td>"; echo $row1['chemistry']; echo "</td>";

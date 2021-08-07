@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+include 'header2.php';
 ?>
 <?php
 if($_SESSION['status']!="active")

@@ -9,7 +9,7 @@ window.onunload=function(){null};
 <html>
 <head>
     
-    <title>Login Page</title>
+    <title>LGM College || Official</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,7 +49,7 @@ background-image:url('img/main1.jpeg');
                     <input name="password" class="form-control form-control-lg" placeholder="Password" type="password" required>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-info btn-lg btn-block" name="btn_login" id="btn_logi">SIGN IN</button>
+                    <button class="btn btn-info btn-lg btn-block" name="btn_login" id="btn_login">SIGN IN</button>
                 </div>
             </form>
         </div>
@@ -101,24 +101,22 @@ function login(){
         $results = mysqli_query($db, $query);
 
         if (mysqli_num_rows($results) == 1) { // user found
-            // check if user is admin
+            // check if user is admin or user
             $_SESSION['status']="active";
             $logged_in_user = mysqli_fetch_assoc($results);
-                 
-                 header("location:home");         
+            if ($logged_in_user['user_type'] == 'admin') {  
+                 header("location:home.php");         
                 $_SESSION['user'] = $logged_in_user;
-                $_SESSION['success']  = "You are now logged in";                                        
-           
-                           
+                        $_SESSION['success']  = "You are now logged in";                                        
+                            }
+                        else if ($logged_in_user['user_type'] == 'student') {
+                header('location:home1.php');          
+                $_SESSION['user'] = $logged_in_user;
+                $_SESSION['success']  = "You are now logged in";
+                
+            }
         }
-           else
-           {?>
-        <script>
-            alert("Please Enter The Valid Details!!!!");
-        </script>
-    <?php       
-            header("location:login2");
-           } 
+            
     }
 }
 

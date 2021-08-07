@@ -3,7 +3,7 @@
 $servername="localhost";
 $username="root";
 $password="";
-$dbname="payroll";
+$dbname="lgmstudent";
 
 	error_reporting(E_ERROR | E_PARSE);
 		

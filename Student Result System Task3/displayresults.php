@@ -1,4 +1,4 @@
-<?php include("header2.php");
+<?php include("header.php");
 
  ?>
 <html>
@@ -17,7 +17,7 @@
   <div class="display_result">
   <div class="container">
 
-    <h3>Congratulations!! You're Passed!!</h3>
+    <h3>All Students Results</h3>
 
    <br />
    <div id="result"></div>
