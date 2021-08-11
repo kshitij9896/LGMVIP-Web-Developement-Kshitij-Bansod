@@ -56,5 +56,3 @@ Tools Used : XAMPP Control,[Multiplatform ,Apache Tomcat Server,MariaDB,Pearl,PH
 ✅ 🎖️ LetsGrowMore is an MSME registered start-up with nearly 100+ people working under the same establishment
 
 ✅ LetsGrowMore is a ground-based organization that aims at building the future through nourishing the present
-
-✅ 👩‍💻 Working as Web Developer @LetsGrowMore 🎖️💼
