@@ -33,18 +33,7 @@
 
       </a>
     </li>
-
-      <!-- <li class="nav-item">
-      <a class="nav-link">  
-        <form action="Logout.php" method="post">
-      
-      <button type="submit" class="btn btn primary btn-md" name="btn_logout" style="color:#fff;background-color:#696969;">
-<i class='fa fa-sign-out fa-1x' area-hidden='true' id="logout" style="color:#fff;font-size: 15px;" ></i>
-            </button>
-            </form></a></li>
- -->
-
-  </ul>
+ </ul>
 </nav>
 
 

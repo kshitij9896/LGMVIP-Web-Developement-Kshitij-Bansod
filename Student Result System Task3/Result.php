@@ -30,14 +30,13 @@ h5{
 text-align:center;
 font-weight:bold;
 font-size:20px;
-color:black;
-font-family:"Times New Roman";
+color:#9900FF;
+margin-top: 5%;
+margin-bottom: 2%;
+
 }
 body{
-background-image:url("img/demo.JPG");
-background-attachment:fixed;
-background-repeat:no-repeat;
-background-size:cover;
+	background-color: #A9A9A9;
 }
 label{
 font-weight:bold;
@@ -108,8 +107,8 @@ input[type=text],[type=number]
 <div clas="container-fluid">
 
    <form class="form-group"  form name="Empreg" method="post" action="RegisterStud.php" autocomplete="on">
-	<h5>Student Result</h5>	
-	  <table id='printtable'>
+	<h5>Add Students Results</h5>	
+	  <!-- <table id='printtable'> -->
 
 	<div class="row jumbotron">
 
