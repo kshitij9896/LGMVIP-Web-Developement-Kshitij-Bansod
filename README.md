@@ -1,5 +1,8 @@
 LGM-Web-Developement-Repo
 
+📲 Deployed Version 🔗🌐 :
+
+✅ #TASK 1 => https://lgmdemowebkshitijbansod.netlify.app/
 
 ✅ Successfully ‍Completed 📝 #TASK 1 & #TASK 3 Under The @#LGMVIP Program 💼 👨‍💻
 In The Very First Week
